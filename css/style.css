@@ -3,16 +3,18 @@
 :root {
     --text: #222323;
     --background: #f0f6f0;
+    --border-radius: 20px;
 }
 
 body {
     width: 85%;
-    margin: auto;
+    margin: 2em auto;
     background-color: var(--background);
     color: var(--text);
     font-family: "DM Mono", monospace;
     font-weight: 400;
     font-style: normal;
+    min-height: 100vh;
 }
 
 .material-symbols-outlined {
@@ -24,7 +26,7 @@ header {
     padding: 1.5em;
     border: 0.25em solid var(--text);
     border-bottom: 0px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
 }
 
 header h1 {
@@ -39,7 +41,7 @@ nav ul {
 }
 
 nav {
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px var(--border-radius) var(--border-radius);
 }
 
 nav li {
@@ -51,16 +53,16 @@ nav li {
 }
 
 nav li:last-child {
-    border-radius: 0px 0px 20px 0px;
+    border-radius: 0px 0px var(--border-radius) 0px;
     border-left: 0px;
 }
 
 nav li:first-child {
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 0px 0px 0px var(--border-radius);
     border-right: 0px;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: var(--text);
     color: var(--background);
 }
@@ -68,4 +70,44 @@ nav li:hover{
 header .material-symbols-outlined {
     font-size: xx-large;
     font-variation-settings: "wght" 700;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+
+footer li {
+    display: inline;
+    flex-grow: 1;
+    border: 0.25em solid var(--text);
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer li:last-child {
+    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+    border-left: 0px;
+}
+
+footer li:first-child {
+    border-radius: var(--border-radius) 0px 0px var(--border-radius);
+    border-right: 0px;
+}
+
+footer li:hover {
+    background-color: var(--text);
+    color: var(--background);
+}
+
+main {
+    min-height: 100vh;
+
+    display: grid;
 }
