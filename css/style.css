@@ -113,6 +113,26 @@ footer li:hover {
 
 main {
     min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content:stretch;
+    align-items: stretch;
+    gap: 1em;
+    margin:2em 0px;
+    
+}
 
-    display: grid;
+article{
+    flex-grow: 1;
+    border: 0.25em solid var(--text);
+    border-radius: var(--border-radius) ;
+}
+
+section:not(:last-child){
+    border-bottom: 0.25em solid var(--text);
+}
+
+section{
+    padding: 1.5em;
 }
