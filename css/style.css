@@ -51,7 +51,7 @@ nav li {
     border: 0.25em solid var(--text);
     text-align: center;
     padding: 0.5em;
-    transition: flex-grow 0.5s;
+    transition: flex-grow 0.25s;
 }
 
 nav li:last-child {
@@ -142,6 +142,9 @@ section h2{
 a{
     color:inherit;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 section > *{
