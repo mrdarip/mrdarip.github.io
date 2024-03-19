@@ -19,6 +19,7 @@ body {
 
 .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    vertical-align: text-bottom;
 }
 
 header {
@@ -50,6 +51,7 @@ nav li {
     border: 0.25em solid var(--text);
     text-align: center;
     padding: 0.5em;
+    transition: flex-grow 0.5s;
 }
 
 nav li:last-child {
@@ -65,6 +67,7 @@ nav li:first-child {
 nav li:hover {
     background-color: var(--text);
     color: var(--background);
+    flex-grow: 1.25;
 }
 
 header .material-symbols-outlined {
@@ -89,6 +92,7 @@ footer li {
     border: 0.25em solid var(--text);
     text-align: center;
     padding: 0.5em;
+    transition: flex-grow 0.5s
 }
 
 footer li:last-child {
@@ -104,6 +108,7 @@ footer li:first-child {
 footer li:hover {
     background-color: var(--text);
     color: var(--background);
+    flex-grow: 1.25;
 }
 
 main {
