@@ -1,34 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
 
 :root {
-    --border-radius: 20px;
-
     --text: #080e12;
     --background: #e8f1f7;
     --primary: #1c5878;
     --secondary: #6cbcea;
     --accent: #0f8dd7;
+
+    --border-radius: 20px;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --text: #080e12;
-        --background: #e8f1f7;
-        --primary: #1c5878;
-        --secondary: #6cbcea;
-        --accent: #0f8dd7;
-    }
+[data-theme="dark"] {
+    --text: #edf3f7;
+    --background: #081117;
+    --primary: #87c3e3;
+    --secondary: #156593;
+    --accent: #28a7f0;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text: #edf3f7;
-        --background: #081117;
-        --primary: #87c3e3;
-        --secondary: #156593;
-        --accent: #28a7f0;
-    }
-}
 body {
     width: 85%;
     margin: 2em auto;

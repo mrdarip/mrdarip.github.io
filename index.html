@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+         <meta name="color-scheme" content="light dark">
         <title>Darío Peregrín Alconchel</title>
         <meta
             name="description"
@@ -11,6 +12,7 @@
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
+        <script src="./js/darkThemeHandler.js"></script>
         <link rel="stylesheet" href="./css/style.css" />
 
         <link
@@ -75,6 +77,11 @@
                 </li>
             </ul>
         </footer>
-        <script src="" async defer></script>
+
+        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme">
+        </label>
+
+        <script src="./js/darkThemeToggler.js"></script>
     </body>
 </html>
