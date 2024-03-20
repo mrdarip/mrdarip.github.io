@@ -1,17 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
+
+:root {
+    --border-radius: 20px;
+
+    --text: #080e12;
+    --background: #e8f1f7;
+    --primary: #1c5878;
+    --secondary: #6cbcea;
+    --accent: #0f8dd7;
+}
+
 @media (prefers-color-scheme: light) {
     :root {
-        --text: #222323;
-        --background: #f0f6f0;
-        --border-radius: 20px;
+        --text: #080e12;
+        --background: #e8f1f7;
+        --primary: #1c5878;
+        --secondary: #6cbcea;
+        --accent: #0f8dd7;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text: #f0f6f0;
-        --background: #222323;
-        --border-radius: 20px;
+        --text: #edf3f7;
+        --background: #081117;
+        --primary: #87c3e3;
+        --secondary: #156593;
+        --accent: #28a7f0;
     }
 }
 body {
@@ -31,7 +46,6 @@ body {
 }
 
 header {
-    background-color: var(--primary);
     padding: 1.5em;
     border: 0.25em solid var(--text);
     border-bottom: 0px;
@@ -84,6 +98,9 @@ nav li:hover {
 header .material-symbols-outlined {
     font-size: xx-large;
     font-variation-settings: "wght" 700;
+}
+.material-symbols-outlined {
+    color: var(--accent);
 }
 
 footer ul {
@@ -146,6 +163,7 @@ section > * {
 section > :first-child {
     border: 0.25rem solid var(--text);
     border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    color: var(--secondary);
 }
 
 section > :not(:first-child):not(:last-child) {
