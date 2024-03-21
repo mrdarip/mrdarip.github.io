@@ -179,3 +179,22 @@ section > * {
     padding: 1.5rem;
     list-style-position: inside;
 }
+
+
+
+
+ input {
+    position: absolute;
+    opacity: 0;
+
+  }
+  
+  /* Create a custom checkbox */
+  .theme-switch {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
